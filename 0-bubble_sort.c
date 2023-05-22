@@ -2,7 +2,7 @@
 
 /**
  * bubble_sort - sorts an array of integers using the Bubble sort algorithm
- * 
+ *
  * @array: tableau random
  * @size: size of array
  *
@@ -36,7 +36,7 @@ void bubble_sort(int *array, size_t size)
 
 void swap(int *a, int *b)
 {
-	int *tmp;
+	int tmp;
 
 	tmp = *b;
 	*b = *a;
