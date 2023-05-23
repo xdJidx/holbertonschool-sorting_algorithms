@@ -1,13 +1,13 @@
 #include "sort.h"
 
 /**
- * swap - swaps two elements in an array
+ *doubleSwap - swaps two elements in an array
  * @list: pointer to the head of the list
  * @node1: pointer to the first node
  * @node2: pointer to the second node
  * Return: void
  */
-void swap(listint_t **list, listint_t **node1, listint_t *node2)
+void doubleSwap(listint_t **list, listint_t **node1, listint_t *node2)
 {
     /* Maj pointeur "next" de node1 pour pointer vers le nœud après node2 */
 	(*node1)->next = node2->next;
@@ -55,7 +55,7 @@ void insertion_sort_list(listint_t **list)
 		/* Compare et insert du nœud courant à sa position appropriée */
 		while (prev != NULL && prev->n > next->n)
 		{
-			swap(list, &prev, next); /* Échange les nœuds si nécessaire */
+			doubleSwap(list, &prev, next); /* Échange les nœuds si nécessaire */
 			print_list(*list); /*Affiche la liste après chaque échange */
 			prev = next->prev; /* Maj prev pour continuer comparaison si nécessaire */
 		}
