@@ -27,5 +27,6 @@ void quick_sort(int *array, size_t size);
 void doubleSwap(listint_t **node1, listint_t **node2);
 void quickSortRecursive(int arr[], int low, int high);
 int partition(int arr[], int low, int high);
+void swap(int *a, int *b);
 
 #endif
