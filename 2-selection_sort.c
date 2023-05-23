@@ -23,7 +23,7 @@ void selection_sort(int *array, size_t size)
 		{
 		small_i = j;
 		}
-		 if (small_i != i)
+		if (small_i != i)
 		{
 
 		swap(&array[small_i], &array[i]);
